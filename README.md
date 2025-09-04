@@ -1,50 +1,135 @@
-# Welcome to your Expo app 👋
+# PrimadonnaWiki
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Um aplicativo móvel interativo que explora os arquétipos do icônico álbum **Electra Heart** da artista Marina and the Diamonds (agora Marina). O app oferece uma experiência imersiva para descobrir e entender os diferentes personagens que compõem a narrativa visual e conceitual deste álbum revolucionário.
 
-## Get started
+## 🎭 Sobre o Projeto
 
-1. Install dependencies
+**PrimadonnaWiki** é uma aplicação React Native desenvolvida com Expo que serve como uma enciclopédia interativa dos arquétipos femininos apresentados no álbum Electra Heart. O app permite aos usuários explorar cada personagem através de uma interface elegante e responsiva, com vídeos de fundo e elementos visuais que capturam a essência estética do álbum.
 
-   ```bash
-   npm install
-   ```
+## 🎨 Arquétipos Disponíveis
 
-2. Start the app
+O aplicativo apresenta os quatro principais arquétipos do álbum Electra Heart:
 
-   ```bash
-   npx expo start
-   ```
+- **The Beauty Queen** - A rainha da beleza, representando a obsessão pela perfeição estética
+- **The Homewrecker** - A destruidora de lares, simbolizando a sedução e o poder feminino
+- **The Housewife** - A dona de casa, representando os papéis tradicionais femininos
+- **The Starlet** - A estrela em ascensão, simbolizando a fama e o glamour
 
-In the output, you'll find options to open the app in a
+## ✨ Características
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+- **Interface Responsiva**: Adapta-se perfeitamente a diferentes tamanhos de tela
+- **Vídeo de Fundo**: Experiência visual imersiva com vídeo de fundo em loop
+- **Design Moderno**: Interface elegante com efeitos de blur e sombras
+- **Navegação Intuitiva**: Scroll horizontal para navegar entre os arquétipos
+- **Cross-Platform**: Funciona em iOS, Android e Web
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## 🛠️ Tecnologias Utilizadas
 
-## Get a fresh project
+- **React Native** - Framework para desenvolvimento mobile
+- **Expo** - Plataforma para desenvolvimento React Native
+- **TypeScript** - Tipagem estática para JavaScript
+- **Expo Router** - Navegação baseada em arquivos
+- **Expo Video** - Reprodução de vídeos
+- **Expo Blur** - Efeitos de desfoque
+- **React Native Reanimated** - Animações fluidas
+- **Moti** - Biblioteca de animações
 
-When you're ready, run:
+## 📱 Como Executar
 
+### Pré-requisitos
+
+- Node.js (versão 18 ou superior)
+- npm ou yarn
+- Expo CLI (`npm install -g @expo/cli`)
+- Expo Go app no seu dispositivo móvel (para teste)
+
+### Instalação
+
+1. Clone o repositório:
 ```bash
-npm run reset-project
+git clone [URL_DO_REPOSITORIO]
+cd PrimadonnaWiki
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+2. Instale as dependências:
+```bash
+npm install
+```
 
-## Learn more
+3. Inicie o servidor de desenvolvimento:
+```bash
+npm start
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+4. Escaneie o QR code com o Expo Go app ou execute em um emulador:
+```bash
+# Para Android
+npm run android
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+# Para iOS
+npm run ios
 
-## Join the community
+# Para Web
+npm run web
+```
 
-Join our community of developers creating universal apps.
+## 📁 Estrutura do Projeto
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+```
+PrimadonnaWiki/
+├── app/                    # Páginas da aplicação
+│   ├── _layout.tsx        # Layout principal
+│   ├── index.tsx          # Página inicial
+│   └── thebq.tsx          # Página do arquétipo
+├── assets/                # Recursos estáticos
+│   ├── images/           # Imagens e ícones
+│   ├── photos/           # Fotos dos arquétipos
+│   └── bg.mp4            # Vídeo de fundo
+├── components/           # Componentes reutilizáveis
+│   ├── content.tsx       # Componente de conteúdo
+│   ├── icon.tsx          # Componente de ícone
+│   └── link.tsx          # Componente de link
+├── hooks/                # Hooks customizados
+│   └── useResponsive.ts  # Hook para responsividade
+├── utils/                # Utilitários
+│   └── responsive.ts     # Funções de responsividade
+└── examples/             # Exemplos de uso
+```
+
+## 🎯 Funcionalidades Principais
+
+- **Exploração de Arquétipos**: Navegue pelos diferentes personagens do álbum
+- **Galeria de Imagens**: Visualize fotos exclusivas de cada arquétipo
+- **Experiência Imersiva**: Vídeo de fundo e efeitos visuais
+- **Design Responsivo**: Interface adaptável para todos os dispositivos
+- **Navegação Fluida**: Transições suaves entre seções
+
+## 🎨 Design e UX
+
+O aplicativo foi desenvolvido com foco na experiência do usuário, incorporando:
+
+- **Estética Visual**: Design que reflete a identidade visual do álbum Electra Heart
+- **Responsividade**: Interface que se adapta a diferentes tamanhos de tela
+- **Performance**: Otimizado para uma experiência fluida
+- **Acessibilidade**: Elementos de interface acessíveis
+
+## 📄 Licença
+
+Este projeto é desenvolvido para fins educacionais e de fã. Todas as imagens e referências ao álbum Electra Heart pertencem à Marina and the Diamonds e suas respectivas gravadoras.
+
+## 🤝 Contribuições
+
+Contribuições são bem-vindas! Sinta-se à vontade para:
+
+- Reportar bugs
+- Sugerir novas funcionalidades
+- Melhorar a documentação
+- Adicionar novos arquétipos ou conteúdo
+
+## 📞 Contato
+
+Para dúvidas ou sugestões sobre o projeto, entre em contato através dos issues do repositório.
+
+---
+
+*"Welcome to the life of Electra Heart"* 💖
